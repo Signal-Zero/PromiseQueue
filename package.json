@@ -2,9 +2,10 @@
   "name": "promise-queue",
   "version": "1.0.0",
   "description": "A javascript bluebird based Promise queue",
-  "main": "PromiseQueue.js",
+  "main": "lib/PromiseQueue.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,9 @@
   "homepage": "https://github.com/Signal-Zero/promise-queue#readme",
   "dependencies": {
     "bluebird": "^3.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
